@@ -141,7 +141,7 @@ import { MachineMode } from './store/machine/modelEnums.js';
 export default {
 	computed: {
 		...mapState({
-			isLocal: state => state.isLocal,
+			isLocal: state => !state.isLocal,
 			globalShowConnectDialog: state => state.showConnectDialog,
 
 			boards: state => state.machine.model.boards,
