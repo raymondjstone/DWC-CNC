@@ -35,7 +35,7 @@ const store = new Vuex.Store({
 		connectingProgress: -1,
 		isDisconnecting: false,
 		isLocal,
-		connectDialogShown: !isLocal,
+		connectDialogShown: isLocal,
 		passwordRequired: false,
 		selectedMachine: defaultMachine,
 		loadedDwcPlugins: [],
