@@ -27,7 +27,7 @@ const machines = {
 
 const pluginCacheFields = {}, pluginSettingFields = {}
 
-const isLocal = (location.hostname === 'xxlocalhost') || (location.hostname === 'xx127.0.0.1')
+const isLocal = (location.hostname === 'xxxlocalhost') || (location.hostname === 'xx127.0.0.1')
 
 const store = new Vuex.Store({
 	state: {
