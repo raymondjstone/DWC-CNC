@@ -27,7 +27,7 @@ const machines = {
 
 const pluginCacheFields = {}, pluginSettingFields = {}
 
-const isLocal = (location.hostname === 'xxxlocalhost') || (location.hostname === 'xx127.0.0.1')
+const isLocal = false
 
 const store = new Vuex.Store({
 	state: {
@@ -35,7 +35,7 @@ const store = new Vuex.Store({
 		connectingProgress: -1,
 		isDisconnecting: false,
 		isLocal,
-		connectDialogShown: isLocal,
+		connectDialogShown: !isLocal,
 		passwordRequired: false,
 		selectedMachine: defaultMachine,
 		loadedDwcPlugins: [],
