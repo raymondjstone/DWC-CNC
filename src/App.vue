@@ -218,9 +218,7 @@ export default {
 		window.addEventListener('unload', this.disconnectAll);
 
 		// Connect if running on a board
-		if (!this.isLocal) {
 			this.connect();
-		}
 
 		// Attempt to load the settings
 		this.load();
