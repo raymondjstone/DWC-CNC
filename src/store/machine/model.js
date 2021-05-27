@@ -208,7 +208,7 @@ export class MachineModel {
 		logFile: null,
 		logLevel: LogLevel.off,
 		messageBox: null,
-		machineMode: MachineMode.fff,
+		machineMode: MachineMode.CNC,
 		msUpTime: 0,
 		nextTool: -1,
 		pluginsStarted: false,					// *** missing in RRF
